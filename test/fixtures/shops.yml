@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shop_code: MyString
+  shop_name: MyString
+  rankin: 1
+
+two:
+  shop_code: MyString
+  shop_name: MyString
+  rankin: 1

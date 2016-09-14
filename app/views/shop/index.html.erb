@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="center-block">
+    <h1>SHOPLIST.com 人気ショップ</h1>
+    <div class="text-right col-12">
+      <%= link_to "強制更新", "update" %>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead class="thead-bordered">
+          <tr>
+            <th class="col-4">ショップ名</th>
+            <th class="col-2">スコア</th>
+            <th class="col-6">人気商品</th>
+          </tr>
+        </thead>
+        <% @shop.each do |shop| %>
+          <tbody>
+            <tr>
+              <td><%= shop.shop_name %></td>
+              <td><%= shop.rankin.round(2) %></td>
+              <td><%= link_to shop.popular_product, shop.popular_product_url %></td>
+            </tr>
+          </tbody>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>
