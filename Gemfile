@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+#unicorn
+group :production, :staging do
+    gem 'unicorn'
+end
+
 # Use 'Whenever'
 gem 'whenever', require: false
 
